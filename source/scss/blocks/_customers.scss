@@ -1,0 +1,29 @@
+.customers {
+  margin-bottom: 120px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 43px;
+
+    border: 2px solid var(--color-a);
+
+    max-width: 241px;
+    max-height: 98px;
+    width: 100%;
+    height: 100%;
+  }
+}

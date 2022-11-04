@@ -1,0 +1,34 @@
+.main-top {
+  display: flex;
+   flex-direction: column;
+   align-items:center;
+
+   font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 56px;
+  /* identical to box height, or 124% */
+
+  text-align: center;
+  letter-spacing: 1.44px;
+
+  color: var(--color-a);
+
+   svg {
+    margin-bottom: 22px;
+   }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
+
+    font-size: 18px;
+    line-height: 178%;
+    text-transform: uppercase;
+
+  }
+}

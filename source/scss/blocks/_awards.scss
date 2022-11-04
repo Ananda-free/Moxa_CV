@@ -1,0 +1,66 @@
+.awards {
+  margin-bottom: 120px;
+
+ 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    border: 2px solid var(--color-a);
+    padding: 37px 34px;
+  }
+
+  &__count {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    background-color: var(--color-e);
+    width: 48px;
+    height: 48px;
+
+    font-size: 18px;
+    line-height: 178%;
+    color: var(--color-d);
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 23px;
+    line-height: 139%;
+    letter-spacing: 0.48px;
+
+    span:nth-of-type(2) {
+      font-size: 18px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    grid-gap: 16px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+
+    color: var(--color-a);
+  }
+}

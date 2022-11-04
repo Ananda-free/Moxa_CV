@@ -1,0 +1,91 @@
+.index-second {
+  background-color: var(--color-a);
+  transform: rotate(-5deg);
+
+  margin-bottom: 220px;
+}
+
+
+
+
+$animationSpeed: 10s;
+
+// Animation
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+
+  background: var(--color-a);
+
+  height: 100px;
+  margin: auto;
+  overflow:hidden;
+  position: relative;
+  width: 100%;
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+
+  color: var(--color-d);
+
+
+
+  &::before,
+  &::after {
+
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+
+  }
+
+  .slide-track {
+
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+    width: 250px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 40px;
+      background: url('/img/sprite/star-8.svg');
+      background-repeat:no-repeat;
+      right: 0;
+      transform: translateY(30%);
+    }
+  }
+}
+

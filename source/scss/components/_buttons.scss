@@ -1,0 +1,51 @@
+.btn-hover {
+  transition: all .4s;
+
+  &:hover {
+    box-shadow: 4px 4px;
+  }
+}
+
+.btn-white {
+  border: 1px solid var(--color-a);
+
+  padding: 13px 33px;
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  text-align: center;
+
+  color: var(--color-a);
+
+}
+
+.btn-black {
+
+  background-color: var(--color-bg-a);
+  border: 1px solid var(--color-a);
+
+  padding: 13px 33px;
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  text-align: center;
+
+  color: var(--color-d);
+  transition: all .4s;
+
+  &:hover {
+    background-color: var(--color-g);
+    color: var(--color-a);
+
+  }
+}
+
+

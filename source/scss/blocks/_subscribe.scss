@@ -1,0 +1,83 @@
+.subscribe {
+  background-color: var(--color-c);
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 1060px;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 32px;
+    /* identical to box height, or 139% */
+
+    letter-spacing: 0.48px;
+
+    color: var(--color-a);
+  }
+
+  &__wrapper {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    grid-gap: 40px;
+  }
+
+  &__input {
+    max-width: 354px;
+    width: 100%;
+    height: 56px;
+    background-color: var(--color-c);
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height:139%;
+
+    letter-spacing: 0.48px;
+    color: var(--color-a);
+
+
+    &::placeholder {
+      display: flex;
+      justify-content: center;
+      outline: none;
+      background-color: var(--color-c);
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height:139%;
+
+      letter-spacing: 0.48px;
+      color: var(--color-a);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-a);
+    max-width: 140px;
+    width: 100%;
+    height: 56px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 139%;
+
+    letter-spacing: 0.48px;
+
+    color: var(--color-d);
+  }
+}

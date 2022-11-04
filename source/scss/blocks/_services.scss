@@ -1,0 +1,33 @@
+.services {
+  margin-bottom: 120px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+
+
+    color: var(--color-a);
+  }
+
+  &__item {
+    padding: 34px;
+    border: 2px solid var(--color-a);
+
+    &-title {
+      margin-bottom: 28px;
+      font-size: 31px;
+      line-height: 129%;
+      letter-spacing: 0.64px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 178%;
+    }
+  }
+}
